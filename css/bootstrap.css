@@ -4638,6 +4638,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse {
   background-color: #222;
+  opacity: 0.7;
   border-color: #080808;
 }
 .navbar-inverse .navbar-brand {
@@ -5008,7 +5009,12 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #eee;
+  background: url(../Images/banner.jpg);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -5029,14 +5035,6 @@ a.badge:focus {
 .jumbotron .container {
   max-width: 100%;
 }
-
-.jumbotron img {
-	width:100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
 @media screen and (min-width: 768px) {
   .jumbotron {
     padding-top: 48px;
