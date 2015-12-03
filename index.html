@@ -65,7 +65,7 @@
 	
 		<!-- Speaker section -->
 		<section id="speaker">
-			<div id="speaker" class="container-fluid" style="background-color: #F0F0F0; padding-bottom: 20px">
+			<div id="speaker" class="container-fluid bg-grey" style="padding-bottom: 20px">
 				<div class="banner col-xs-12" style="padding-bottom: 10px">
 					<h2>SPEAKERS</h2>
 					<p>Listen to these innovative minds discuss new and exciting technological ideas</p>
@@ -112,7 +112,7 @@
 
 
 		<!-- Conference topics -->
-		<div class="container-fluid" style="padding: 0px 100px 0 100px; background-color: #F0F0F0;">
+		<div class="container-fluid bg-grey" style="padding: 0px 100px 0 100px;">
 			<h2>TOPICS</h2>
 			<div class="row">
 				<div class="col-sm-3">
@@ -145,7 +145,7 @@
 		</div>
 		
 		<!-- Sponsor section -->
-		<div class="container-fluid text-center" style="background-color: #F0F0F0; padding-bottom: 60px">
+		<div class="container-fluid text-center bg-grey" style="padding-bottom: 30px">
 			<hr>
 			<br>
 			<h2>SPONSORS</h2></br>
@@ -179,11 +179,52 @@
 					<h2>Sponsor</h2>
 				</div>
 			</div>
+			<hr>
 		</div>	
 
 		<!-- Footer -->
-		<div class="container-fluid" style="background-color: #505050; color: white">
-			<h3>CONTACT</h3>
+		<div class="container-fluid bg-darkgrey">
+			<h2>CONTACT</h2>
+			<div class="row">
+				<div class="col-sm-5" style="text-align: left; padding: 0 0 200px 200px">
+					<h3>Please contact us with your questions</h3>
+					<p>Twitter: <a class="contact-link" href="https://twitter.com/macdevopsyvr">@MacDevOpsYVR</a></p>
+					<p><span class="glyphicon glyphicon-envelope"></span>
+					Email: <a class="contact-link" href="macdevopsca@macdevops.ca">macdevops::yvr</a></p>
+					<p><span class="glyphicon glyphicon-map-marker">Vancouver,BC,Canada</p>
+				
+				
+				<!-- Google Maps -->
+				<div id="googleMap" style="height:400px; width: 400px;">
+				</div>
+				
+					<script src="http://maps.googleapis.com/maps/api/js"></script>
+					<script>
+					
+						var myLocation = new google.maps.LatLng(49.2850146, -123.1111652);
+						
+						function initialize() {
+						var mapProp = {
+						center: myLocation,
+						zoom:16,
+						draggable: false,
+						scrollwheel: false,
+						mapTypeId:google.maps.MapTypeId.ROADMAP
+						};
+						
+						var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+							
+						var marker = new google.maps.Marker({
+						position: myLocation,
+						})
+						
+						marker.setMap(map);
+						}
+						
+						google.maps.event.addDomListener(window, 'load', initialize);
+					</script>
+				</div>
+			</div>
 		</div>
 
 	</body>

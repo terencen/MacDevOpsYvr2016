@@ -267,6 +267,15 @@ th {
   src: url('../fonts/glyphicons-halflings-regular.eot');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
+
+.contact-link {
+	color: white;
+}
+
+.contact-link:hover {
+	color: #00FF00;
+}
+
 .glyphicon {
   position: relative;
   top: 1px;
@@ -1595,6 +1604,15 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.bg-grey {
+	background-color: #F0F0F0;
+}
+
+.bg-darkgrey {
+	background-color: #505050;
+	color: white;
 }
 @media (min-width: 768px) {
   .container {
